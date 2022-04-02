@@ -1,0 +1,138 @@
+body{
+  font-family: "Raleway";
+}
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+
+/* ===================================HEADER */
+.Header{
+  display: flex;
+  padding: 10px 0;
+}
+
+
+
+.logo__wrapper{
+  display: flex;
+}
+.logo__img{
+  display: block;
+  height: 40px;
+  width: 40px;
+  margin: 0 20px 0 0;
+}
+.logo__name{
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+}
+.LoginBtn a{
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+
+  background-color: rgb(122, 162, 248);
+  border-radius: 10px;
+  min-width: 200px;
+  min-height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.flexgrow{
+  flex-grow: 1;
+}
+
+.Avatar{
+  height: 40px;
+  width: 40px;
+  overflow: hidden;
+  margin: 0 10px 0 0;
+  border-radius: 50%;
+}
+
+
+
+
+
+.content-container{
+  padding: 0 150px;
+ 
+}
+.flexbox{
+  display: flex;
+  background-color: rgb(224, 224, 224);
+  margin: 1 0 auto;
+}
+
+/* =================================MENUBAR */
+
+.menubar-wrapper{
+align-self: flex-start;
+
+}
+.menuBar-list{
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  font-size: 20px;
+
+ }
+ .menuBar-list ul{
+
+}
+.menuBar-list li{
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 3px 0;
+}
+.menuBar-list img{
+  
+
+}
+
+/* =================================CONTENT */
+.content__wrapper{
+  display: flex;
+  background-color: white;
+  margin: 5px 5px 5px 0;
+  padding: 10px;
+  border-radius: 10px;
+  flex-grow: 1;
+}
+.content__userPhoto{
+  height: 200px;
+  width: 150px;
+overflow: hidden;
+border-radius: 10px;
+margin: 0 20px 0 0 ;
+
+}
+.content__userPhoto img{
+
+}
+.content__userInfo{
+  
+}
+.content__userName{
+  font-size: 20px;
+  font-weight: 500;
+}
+.content__status{
+  font-weight: 500;
+}
+
+.newPost{
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px;
+}
