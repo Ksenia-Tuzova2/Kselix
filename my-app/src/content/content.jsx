@@ -1,3 +1,5 @@
+import './content.css'
+
 import Profile from './profile/profile'
 
 const Content=()=>{

@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "react-way-of-samurai",
+			"path": "../../../../react-way-of-samurai"
+		},
+		{
+			"name": "Kselix",
+			"path": "../../.."
+		}
+	],
+	"settings": {
+		"files.autoSave": "onFocusChange"
+	}
+}

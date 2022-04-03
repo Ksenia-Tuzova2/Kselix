@@ -1,0 +1,51 @@
+/* ===================================HEADER */
+.Header{
+    display: flex;
+    padding: 10px ;
+  }
+
+  .logo__wrapper{
+    display: flex;
+  }
+  .logo__img{
+    display: block;
+    min-height: 40px;
+    min-width: 40px;
+    max-height: 40px;
+    max-width: 40px;
+    margin: 0 20px 0 0;
+  }
+  .logo__name{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .LoginBtn a{
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+  
+    background-color: rgb(122, 162, 248);
+    border-radius: 10px;
+    min-width: 200px;
+    min-height: 40px;
+    text-align: center;
+    line-height: 40px;
+  }
+  
+  .flexgrow{
+    flex-grow: 1;
+  }
+  
+  .Avatar{
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    margin: 0 10px 0 0;
+    border-radius: 50%;
+  }
+  
+  
+  

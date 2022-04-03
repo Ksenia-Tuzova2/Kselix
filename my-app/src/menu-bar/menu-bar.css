@@ -1,0 +1,31 @@
+/* =================================MENUBAR */
+
+.menubar-wrapper{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    font-size: 20px;
+  
+    margin: 5px 5px 0 0;
+    padding: 10px 10px ;
+    height: fit-content;
+  max-width: 190px;
+  
+  }
+  
+  .menuBar-list li{
+    min-width: 150px;
+  
+    margin: 0 0 5px 0;
+    padding: 0 30px 0 30px;
+  }
+  .menuBar-list p{
+  position: relative;
+  padding: 0 0 0 30px;
+  
+  }
+  .menuBar-list img{
+    display: inline-block;
+    position: absolute;
+  }
+
+  
