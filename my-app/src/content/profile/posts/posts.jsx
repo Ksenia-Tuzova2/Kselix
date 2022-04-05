@@ -1,10 +1,13 @@
-import NewPosts from './newPosts'
-import PostArea from './postArea'
+import NewPosts from './newPosts/newPosts'
+import PostArea from './postArea/postArea'
 
+// debugger
 const Posts=()=>{
     return(
     <div className="content__post">
        <PostArea/>
+       
+       <NewPosts/>
        <NewPosts/>
     </div>
 

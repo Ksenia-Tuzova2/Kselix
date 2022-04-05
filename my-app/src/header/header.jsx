@@ -1,17 +1,16 @@
-import './header.css'
+import HeaderStyle from './header.module.css'
 
-import Logo from'./logo'
-import Avatar from'./avatar'
-import LoginBtn from'./login_btn'
+import Logo from'./logo/logo'
+import Avatar from'./avatar/avatar'
+import LoginBtn from'./login_btn/login_btn'
 
 import '../App.css';
 
-const Header=()=> {
+const Header=(props)=> {
   return (
-    <div className="Header">
-      
+    <div className={HeaderStyle.Header}>
       <Logo/>
-      <div className='flexgrow'></div>
+      <div className={HeaderStyle.Flexgrow}></div>
       <Avatar/>
       <LoginBtn/>
     </div>

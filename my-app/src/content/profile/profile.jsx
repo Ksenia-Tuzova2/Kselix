@@ -2,7 +2,7 @@ import Posts from './posts/posts'
 import UserInfoList from './userInfo/userInfo-list'
 import UserName from './userInfo/userName'
 import UserStatus from './userInfo/userStatus'
-import UserPhoto from './userphoto'
+import UserPhoto from './userInfo/userPhoto/userPhoto'
 
 
 const Profile=()=>{

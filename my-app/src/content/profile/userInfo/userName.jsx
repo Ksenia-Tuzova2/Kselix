@@ -1,6 +1,6 @@
 const UserName=()=>{
     return(
-               <div className="content__userName">
+               <div className="UserName">
               Ksenia Tuzova</div>
     )
 }

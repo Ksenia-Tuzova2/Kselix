@@ -1,0 +1,8 @@
+.Like__wrapper{
+display: flex;
+flex-direction: row;
+}
+.Like__btn{
+  width: 25px;
+height: 30px;
+}
