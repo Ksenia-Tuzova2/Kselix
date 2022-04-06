@@ -1,9 +1,14 @@
-const UserInfoList=()=>{
+import UserInfoCity from "./userInfoCityEducation/userInfoCity"
+import UserInfoEducation from "./userInfoCityEducation/userInfoEducation"
+
+
+
+const UserInfoList=(props)=>{
     return(
       <div>
              <ul className="userInfo-list">
-               <li>City: Moscow</li>
-              <li>Education: school 1508</li>
+              <UserInfoCity  city='Moscow'/>
+              <UserInfoEducation nameOfOrg='school 1508' ></UserInfoEducation>
             </ul>
             </div>
     )

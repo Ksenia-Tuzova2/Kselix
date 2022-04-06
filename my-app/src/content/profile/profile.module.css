@@ -1,5 +1,8 @@
-/* =================================CONTENT */
-.profile__wrapper{
+.ProfileWrapper{
+
+}
+
+.Profile{
     display: flex;
     background-color: white;
     margin: 5px 5px 5px 0;
@@ -8,10 +11,6 @@
     flex-grow: 1;
   }
 
- 
-  .UserName{
-    font-size: 20px;
-    font-weight: 500;
+  .Profile__userInfo{
+      
   }
- 
-  

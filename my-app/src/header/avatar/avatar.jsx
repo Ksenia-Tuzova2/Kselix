@@ -2,12 +2,12 @@
 import styleAvatar from './avatar.module.css'
 import Img from '../../img/myphoto.jpg'
 
-const Avatar=()=>{
+const Avatar=(props)=>{
     return(
         <div className={styleAvatar.Avatar}>
         <a href='#'>
         <img src={Img}
-        alt=""></img>
+        alt="">{props.Img}</img>
         </a>
         </div>
     )

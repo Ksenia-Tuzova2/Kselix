@@ -1,21 +1,23 @@
+import ProfileStyle from './profile.module.css'
+
 import Posts from './posts/posts'
-import UserInfoList from './userInfo/userInfo-list'
-import UserName from './userInfo/userName'
-import UserStatus from './userInfo/userStatus'
 import UserPhoto from './userInfo/userPhoto/userPhoto'
+import UserInfoList from './userInfo/userInfo-list'
+import UserStatus from './userInfo/userStatus/userStatus'
+import UserName from './userInfo/userName/userName'
 
 
-const Profile=()=>{
+const Profile=(props)=>{
     return(
-        <div className="content__wrapper-main">
-         <div className="profile__wrapper">
-          <UserPhoto/>
-             <div className="content__userInfo">
-              <UserName/>
+        <div className={ProfileStyle.ProfileWrapper}>
+         <div className={ProfileStyle.Profile}>
+           <UserPhoto/>
+              <div className={ProfileStyle.Profile__userInfo}>
+              <UserName frstName='Ksenia' scndName='Tuzova'/>
               <UserStatus/>
               <UserInfoList/>
-             </div>
-            
+              </div>
+             
     </div>
     <Posts/>
     </div>

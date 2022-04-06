@@ -1,0 +1,11 @@
+.Massage{
+display: flex;
+background-color: white;
+border-radius: 10px;
+
+min-height: 100%;
+}
+
+.DialogArea{
+    flex-grow: 1;
+}

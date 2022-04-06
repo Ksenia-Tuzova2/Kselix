@@ -8,12 +8,12 @@ import '../App.css';
 
 const Header=(props)=> {
   return (
-    <div className={HeaderStyle.Header}>
+    <header className={HeaderStyle.Header}>
       <Logo/>
       <div className={HeaderStyle.Flexgrow}></div>
       <Avatar/>
       <LoginBtn/>
-    </div>
+    </header>
   );
 };
 

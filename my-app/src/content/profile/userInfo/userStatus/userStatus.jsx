@@ -1,8 +1,8 @@
 import userStatusStyle from './userStatus.module.css'
 
-const UserStatus=()=>{
+const UserStatus=(props)=>{
     return(
-              <div className={userStatusStyle.content__status}>Gentle flower</div>
+              <div className={userStatusStyle.UserStatus}>Gentle flower</div>
         
     )
 }

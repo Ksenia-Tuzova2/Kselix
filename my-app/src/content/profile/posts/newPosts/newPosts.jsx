@@ -1,6 +1,6 @@
 import NewPostsStyle from './newPosts.module.css'
 import Avatar from "../../../../header/avatar/avatar"
-import UserName from '../../userInfo/userName'
+import UserName from '../../userInfo/userName/userName'
 import Time from './time'
 import Massage from './massage'
 import Like from './like/like'
@@ -13,7 +13,7 @@ const NewPosts=(props)=>{
 
     return(
         <div className={NewPostsStyle.NewPost}>
-            <div className="Avatar"><Avatar/></div>
+            <Avatar/>
             <div className="Name-time-text">               
                 <UserName/>
                <Time/>

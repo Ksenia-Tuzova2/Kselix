@@ -83,3 +83,9 @@ a:hover{
     scroll-behavior: auto !important;
   }
 }
+a{
+  text-decoration: none;
+  color: black;
+}
+
+

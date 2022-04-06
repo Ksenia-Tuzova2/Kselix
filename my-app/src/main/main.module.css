@@ -1,0 +1,21 @@
+
+  .Main{
+flex-grow: 1;
+
+}
+
+
+/* margin: 0 auto; для горизонтального центрирования */
+.Flexbox{
+    display: flex;
+    background-color: rgb(224, 224, 224);
+  
+  
+  }
+  .Margin{
+    display: flex;
+    flex-grow: 1;
+  max-width: none;
+  min-width: 20px;
+  }
+  
