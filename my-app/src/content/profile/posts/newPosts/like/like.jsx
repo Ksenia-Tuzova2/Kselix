@@ -1,5 +1,6 @@
 import LikeStyle from './like.module.css'
 import LikeIcon from './like.svg'
+import React from 'react'
 
 const Like=(props)=>{
 

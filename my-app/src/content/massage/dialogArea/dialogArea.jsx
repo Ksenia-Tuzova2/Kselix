@@ -1,4 +1,4 @@
-
+import React from 'react'
 import DialogAreaStyle from './dialogArea.module.css'
 
 

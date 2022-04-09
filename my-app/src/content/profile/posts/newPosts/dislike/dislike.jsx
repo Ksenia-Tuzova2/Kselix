@@ -1,6 +1,6 @@
 import LikeStyle from './dislike.module.css'
 import DislikeIcon from './dislike.svg'
-
+import React from 'react'
 const Dislike=(props)=>{
 
     return(

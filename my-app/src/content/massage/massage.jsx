@@ -1,10 +1,10 @@
-
+import React from 'react'
 import DialogArea from './dialogArea/dialogArea'
 import DialogBar from './dialogBar/dialogBar'
 import MassageStyle from './massage.module.css'
 
 
-const Massage=()=>{
+export const Massage=()=>{
     return(
         <div className={MassageStyle.Massage}> 
               <DialogBar/>
@@ -13,4 +13,3 @@ const Massage=()=>{
     )
 }
 
-export default Massage

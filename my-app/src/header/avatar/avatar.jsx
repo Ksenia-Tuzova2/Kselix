@@ -1,4 +1,4 @@
-
+import React from 'react'
 import styleAvatar from './avatar.module.css'
 import Img from '../../img/myphoto.jpg'
 

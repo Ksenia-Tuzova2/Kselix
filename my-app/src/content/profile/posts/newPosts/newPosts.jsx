@@ -1,3 +1,4 @@
+import React from 'react'
 import NewPostsStyle from './newPosts.module.css'
 import Avatar from "../../../../header/avatar/avatar"
 import UserName from '../../userInfo/userName/userName'

@@ -1,4 +1,5 @@
 import DialogBarStyle from './dialogBar.module.css'
+import React from 'react'
 
 const DialogBar=(props)=>{
     return(

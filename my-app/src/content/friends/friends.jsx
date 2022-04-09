@@ -1,15 +1,13 @@
 import FriendsStyle from './friends.module.css'
+import React from 'react'
+import Friend from './friend/friend'
 
-
-const Friends=(props)=>{
+export const Friends=(props)=>{
     return(
     <div className={FriendsStyle.Friends}>
-        <Friends friendName='Stanislav Borsch'/>
-   </div>
-
-       
+        <Friend friendName='Stanislav Borsch'/>
+ </div>
     
     )
 }
 
-export default Friends

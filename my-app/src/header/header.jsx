@@ -1,5 +1,5 @@
 import HeaderStyle from './header.module.css'
-
+import React from 'react'
 import Logo from'./logo/logo'
 import Avatar from'./avatar/avatar'
 import LoginBtn from'./login_btn/login_btn'

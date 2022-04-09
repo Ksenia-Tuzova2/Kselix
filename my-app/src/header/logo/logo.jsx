@@ -1,6 +1,6 @@
 import Ks from '../../img/logo.svg'
 import logoStyle from './logo.module.css'
-
+import React from 'react'
 const Logo=()=>{
     return(
         <div className={logoStyle.Logo_wrapper}>

@@ -1,4 +1,5 @@
 import FriendStyle from './friend.module.css'
+import React from 'react'
 
 const Friend=(props)=>{
     return(

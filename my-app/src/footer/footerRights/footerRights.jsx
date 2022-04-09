@@ -1,3 +1,4 @@
+import React from 'react'
 import Footer__rightsStyle from './footerRights.module.css'
 
 const Footer__rights=()=>{

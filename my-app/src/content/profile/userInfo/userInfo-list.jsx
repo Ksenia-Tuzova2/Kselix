@@ -1,6 +1,6 @@
 import UserInfoCity from "./userInfoCityEducation/userInfoCity"
 import UserInfoEducation from "./userInfoCityEducation/userInfoEducation"
-
+import React from 'react'
 
 
 const UserInfoList=(props)=>{

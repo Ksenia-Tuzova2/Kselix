@@ -1,5 +1,5 @@
 import FooterMenuStyle from './footerMenu.module.css'
-
+import React from 'react'
 const Footer__menu=()=>{
     return(
       

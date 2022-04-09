@@ -1,3 +1,5 @@
+import React from 'react'
+
 const UserInfoEducation=(props)=>{
    
     return( 

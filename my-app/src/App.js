@@ -1,7 +1,6 @@
 import './null.module.css'
 import './App.css';
-
-
+import React from 'react';
 
 import Header from "./header/header"
 import Footer from './footer/footer';
@@ -12,7 +11,7 @@ const App=()=> {
     <div className="App">
       <Header/>
       <Main className='Main'/>
-     <Footer/>
+      <Footer/>
     </div>
   );
 }

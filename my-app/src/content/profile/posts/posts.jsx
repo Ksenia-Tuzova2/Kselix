@@ -1,7 +1,7 @@
 import NewPosts from './newPosts/newPosts'
 import PostArea from './postArea/postArea'
+import React from 'react'
 
-// debugger
 const Posts=()=>{
     return(
     <div className="content__post">

@@ -1,5 +1,5 @@
 import ProfileStyle from './profile.module.css'
-
+import React from 'react'
 import Posts from './posts/posts'
 import UserPhoto from './userInfo/userPhoto/userPhoto'
 import UserInfoList from './userInfo/userInfo-list'
