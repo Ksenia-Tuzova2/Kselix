@@ -32,18 +32,14 @@ const MenuBar=()=>{
 </ul>
  </nav>
  <Routes>
-     <Route path='/profile' element={<Profile/>}/>
-     <Route path='/massage' element={<Massage/>}/>
-     <Route path='/friends' element={<Friends/>}/>
-     <Route path='/massage' element={<Massage/>}/>
-     <Route path='/massage' element={<Massage/>}/>
+     <Route exact path='/profile' element={<Profile/>}/>
+     <Route  path='/massage/*' element={<Massage/>}/>
+     <Route exact path='/friends' element={<Friends/>}/>
  </Routes>
  </>
 
     )
 }
-
-
 
 export default MenuBar
 

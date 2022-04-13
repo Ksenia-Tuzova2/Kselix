@@ -1,8 +1,8 @@
-import './null.module.css'
+import './null.css'
 import './App.css';
 import React from 'react';
 
-import Header from "./header/header"
+import {Header} from './header/header'
 import Footer from './footer/footer';
 import Main from './main/main';
 
@@ -11,7 +11,7 @@ const App=()=> {
     <div className="App">
       <Header/>
       <Main className='Main'/>
-      <Footer/>
+     <Footer/>
     </div>
   );
 }

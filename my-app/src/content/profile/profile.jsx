@@ -7,7 +7,7 @@ import UserStatus from './userInfo/userStatus/userStatus'
 import UserName from './userInfo/userName/userName'
 
 
-const Profile=(props)=>{
+export const Profile=(props)=>{
     return(
         <div className={ProfileStyle.ProfileWrapper}>
          <div className={ProfileStyle.Profile}>
@@ -24,4 +24,3 @@ const Profile=(props)=>{
     )
 }
 
-export default Profile

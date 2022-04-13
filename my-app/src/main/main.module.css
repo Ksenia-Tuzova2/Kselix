@@ -1,15 +1,17 @@
 
   .Main{
+    display: flex;
 flex-grow: 1;
+flex-direction: column;
 
 }
 
 
 /* margin: 0 auto; для горизонтального центрирования */
 .Flexbox{
+ flex-grow: 1;
     display: flex;
-    background-color: rgb(224, 224, 224);
-  
+
   
   }
   .Margin{

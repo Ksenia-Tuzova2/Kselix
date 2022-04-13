@@ -1,6 +1,7 @@
 body{
   font-family: "Raleway";
   min-height: 100%;
+  background-color: rgb(219, 218, 218);
  
 }
 .App{
@@ -15,6 +16,5 @@ input, button{
 }
 
 .Main{
-  flex-grow: 1;
-  height: 100%;
+ flex-grow: 1;
 }

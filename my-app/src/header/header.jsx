@@ -6,7 +6,7 @@ import LoginBtn from'./login_btn/login_btn'
 
 import '../App.css';
 
-const Header=(props)=> {
+export const Header=(props)=> {
   return (
     <header className={HeaderStyle.Header}>
       <Logo/>
@@ -18,4 +18,4 @@ const Header=(props)=> {
 };
 
 
-export default Header;
+
