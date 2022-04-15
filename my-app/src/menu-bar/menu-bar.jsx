@@ -8,10 +8,10 @@ import SettingIcon from './icons-menu-bar/cil_settings.svg'
 import React from 'react'
 
 import {Routes, Route , Link} from 'react-router-dom'
-
+import {Massage} from '../content/massage/massage'
 import {Profile} from '../content/profile/profile'
 import {Friends} from '../content/friends/friends'
-import {Massage} from '../content/massage/massage'
+
 // import News from '#'
 // import Music from '#'
 // import Settings from '#'
@@ -24,7 +24,7 @@ const MenuBar=()=>{
 <nav className={style.menubar__wrapper}>
 <ul className={style.menuBar__list}>
     <li className={style.firstchild}><Link to='/profile'><img src={ProfileIcon}></img><p>Profile</p></Link></li>
-    <li><Link to='/massage'><img src={MassageIcon}></img><p>Massage</p></Link></li>
+    <li><Link to='massage'><img src={MassageIcon}></img><p>Massage</p></Link></li>
     <li><Link to='/friends'><img src={FriendsIcon}></img><p>Friends</p></Link></li>
     <li><Link to='/news'><img src={NewsIcon}></img><p>News</p></Link></li>
     <li><Link to='/music'><img src={MusicIcon}></img><p>Music</p></Link></li>
@@ -32,9 +32,9 @@ const MenuBar=()=>{
 </ul>
  </nav>
  <Routes>
-     <Route exact path='/profile' element={<Profile/>}/>
-     <Route  path='/massage/*' element={<Massage/>}/>
-     <Route exact path='/friends' element={<Friends/>}/>
+     <Route path='/massage/*' element={<Massage/>}/>
+     <Route path='/profile' element={<Profile/>}/>
+     <Route path='/friends' element={<Friends/>}/>
  </Routes>
  </>
 
