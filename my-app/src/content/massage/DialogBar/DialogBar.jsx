@@ -28,13 +28,7 @@ let path= '/DialogArea/'
         },
     ];
 
-    for(i=0;i<;i++){
-        
-    }
-    console.log(DialogData[0].name)
-    //получение объкта
-
-
+    
     let MassageData=[
         {
             massage:'Hey! How are u?' 
@@ -46,6 +40,9 @@ let path= '/DialogArea/'
             massage:'Mow'
         }
     ]
+
+
+    
 
     // let MakeId=DialogData.map((id)=>{
     //     let makeId
@@ -73,9 +70,9 @@ let path= '/DialogArea/'
     // })
 
 
-    let a=[1,2,3]
+//     let a=[1,2,3]
 
-  console.log(a[0])
+//   console.log(a[0])
 
     // for(let i=0;i<a.length;i++){
     //     console.log(a[i]*2)
