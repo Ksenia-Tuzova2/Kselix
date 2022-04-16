@@ -6,7 +6,6 @@ const Posts=()=>{
     return(
     <div className="content__post">
        <PostArea/>
-       
        <NewPosts/>
        <NewPosts/>
     </div>

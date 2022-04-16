@@ -4,13 +4,15 @@ import React from 'react'
 export const DialogItem=(props)=>{
     return(
 
-        <div className={DialogItemStyle.Massage__dialogsBar__friendMassage}>
+        <div className={DialogItemStyle.dialogBar__friendMassage}>
            
-            <a  className={DialogItemStyle.FriendAvatar }href="#"> <img src="" alt="" /> </a>
+            <a  className={DialogItemStyle.FriendAvatar }href="#"> </a>
             <div>
                 <div className={DialogItemStyle.NameTimeMassageWrapper}>
-            <span className={DialogItemStyle.FriendName}>{props.name}</span>
-            <span className={DialogItemStyle.Time}>{props.time}</span>
+                    <div className={DialogItemStyle.NameTimeWrapper}>
+            <div className={DialogItemStyle.FriendName}>{props.name}</div>
+            <div className={DialogItemStyle.Time}>{props.time}</div>
+            </div>
             <div className={DialogItemStyle.FriendMassage}>{props.massage}</div>
             </div>
 
