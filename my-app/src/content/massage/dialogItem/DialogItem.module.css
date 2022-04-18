@@ -17,6 +17,7 @@ background-color: aqua;
 }
 .NameTimeWrapper{
 display: flex;
+
 }
 .FriendName{
     flex-grow: 1;

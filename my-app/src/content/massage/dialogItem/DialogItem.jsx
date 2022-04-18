@@ -1,20 +1,23 @@
-import DialogItemStyle from './DialogItem.module.css'
+import s from './DialogItem.module.css'
 import React from 'react'
+
+
+
 
 export const DialogItem=(props)=>{
     return(
 
-        <div className={DialogItemStyle.dialogBar__friendMassage}>
+        <div className={s.dialogBar__friendMassage}>
            
-            <a  className={DialogItemStyle.FriendAvatar }href="#"> </a>
-            <div>
-                <div className={DialogItemStyle.NameTimeMassageWrapper}>
-                    <div className={DialogItemStyle.NameTimeWrapper}>
-            <div className={DialogItemStyle.FriendName}>{props.name}</div>
-            <div className={DialogItemStyle.Time}>{props.time}</div>
-            </div>
-            <div className={DialogItemStyle.FriendMassage}>{props.massage}</div>
-            </div>
+            <a  className={s.FriendAvatar }href="#"> </a>
+                <div>
+                    <div className={s.NameTimeMassageWrapper}>
+                <div className={s.NameTimeWrapper}>
+                <div className={s.FriendName}>{props.name}</div>
+                <div className={s.Time}>{props.time}</div>
+                </div>
+                     <div className={s.FriendMassage}>{props.massage}</div>
+                </div>
 
             </div>
             
@@ -23,3 +26,4 @@ export const DialogItem=(props)=>{
  
     )
 }
+

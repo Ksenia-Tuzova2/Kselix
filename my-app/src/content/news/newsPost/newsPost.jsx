@@ -13,7 +13,7 @@ export const NewsPost=(props)=>{
             <Time/>
             </div>
       <div className={NewsPostStyle.TextPost}>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed illo blanditiis accusamus eius, laborum aliquam deserunt atque fuga tempore ad nemo quibusdam perspiciatis recusandae quas illum maxime laudantium aspernatur. Deleniti?
+        {props.text}
       </div>
       <img className={NewsPostStyle.ImgPost} src='#'></img>
     </div>

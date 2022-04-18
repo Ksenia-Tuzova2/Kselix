@@ -1,51 +1,53 @@
 import React from 'react'
-import NewPostsStyle from './newPosts.module.css'
+import s from './newPosts.module.css'
 import Avatar from "../../../../header/avatar/avatar"
 import Time from './time'
-import Massage from './massage'
 import Like from './like/like'
 import Dislike from './dislike/dislike'
 import UserName from '../../userInfo/userName/userName'
 
 
+    
+
 
 const NewPosts=(props)=>{
 
-    let LikeNumber=()=>{
-     for(let i=0; ;i++){
-
-     }
-    }
-
-    let MassageData=[
-        {
-             massage:'mmmmm',
-        }
-    ];
-    let LikeCounter=[
-        {
-            counter:4,
-        },
-    ];
 
     let DisikeCounter=[
         {
             counter:4,
         },
     ];
+ 
+  ;
+//     let LikeCounter=(function(){for(let l=0;l<=1;l++){return l}});
+
+//     console.log()
+
+//     LikeCounter();
+
+//   function countRabbits() {
+//     for(let i=1; i<=3; i++) {
+//       alert("Кролик номер " + i);
+//     }
+//   };
+
+
+<input type="button" onclick="countRabbits()" value="Считать кроликов!"></input>
+
 
     return(
-        <div className={NewPostsStyle.NewPost}>
+        <div className={s.NewPost}>
                 <Avatar/>
                 <div className="Name-time-text">
                     <div className="box">              
                 <UserName frstName='Ksenia' scndName='Tuzova'/>
                 <Time/>
                 </div> 
-                <Massage  massage={MassageData[0].massage}/>
-                <div className={NewPostsStyle.NewPost__likeDislikeWrapper}>
-                <Like counter={LikeCounter[0].counter}></Like>
-                <div className={NewPostsStyle.FlexGrow}></div>
+                <div className="Massage">{props.massage}</div>
+                <div className={s.NewPost__likeDislikeWrapper}>
+                <Like ></Like>
+                <div className={s.FlexGrow}></div>
                 <Dislike counter={DisikeCounter[0].counter}/>
                 </div>
                 </div>
