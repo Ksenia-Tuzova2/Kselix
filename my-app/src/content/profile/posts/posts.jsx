@@ -2,22 +2,16 @@ import NewPosts from './newPosts/newPosts'
 import PostArea from './postArea/postArea'
 import React from 'react'
 
-let MassageData=[
-    {
-         massage:'mmmmm',
-    },
-    {
-        massage:'lorem',
-   },
-   {
-    massage:'lorem',
-},
-];
-
-let MakeNewPost=MassageData.map((m)=><NewPosts massage={m.massage}/>)
 
 
-const Posts=()=>{
+
+
+
+
+export const Posts=(props)=>{
+
+    let MakeNewPost = props.massageData.map((m) => <NewPosts massage={m.massage} />)
+
     return(
     <div className="content__post">
        <PostArea/>
@@ -26,5 +20,3 @@ const Posts=()=>{
 
     )
 }
-
-export default Posts

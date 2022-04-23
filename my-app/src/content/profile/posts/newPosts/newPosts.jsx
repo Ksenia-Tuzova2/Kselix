@@ -1,4 +1,3 @@
-import React from 'react'
 import s from './newPosts.module.css'
 import Avatar from "../../../../header/avatar/avatar"
 import Time from './time'

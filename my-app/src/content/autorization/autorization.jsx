@@ -3,7 +3,11 @@ import Box from '../../box.module.css'
 import Btn from '../../btn/btn'
 import RegistrationForm from './registration/registrationForm'
 import {Link, Routes, Route} from 'react-router-dom'
-export const Autorization=(props)=>{
+
+
+
+
+export const Authorization=(props)=>{
     return(
                 <div className={Box.Box}>
 <form action="get">
@@ -13,7 +17,8 @@ export const Autorization=(props)=>{
 
 </form>
 <div>or</div>
-<RegistrationForm/>
+<Link to='/registrationForm'><Btn name='registration'></Btn></Link>
+
                 </div>
     )
 }

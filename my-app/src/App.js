@@ -2,21 +2,33 @@ import './null.css'
 import './App.css';
 import React from 'react';
 import {Link, Routes, Route} from 'react-router-dom'
-
+import MainStyle from './main.module.css'
 import {Header} from './header/header'
 import Footer from './footer/footer';
-import Main from './main/main';
-import { Autorization } from './content/autorization/autorization';
+import { RegistrationForm } from './content/autorization/registration/registrationForm'
+import { Authorization } from './content/autorization/autorization';
 import MenuBar from './menu-bar/menu-bar';
 
-const App=()=> {
+const App=(props)=> {
+
   return (
-    <div className="App">
-      <Header/>
-      <Main className='Main'/>
+    <div className="App" makeArr={props.makeArr}>
+      <Header />
+        <main className={MainStyle.Main} >
+          <div className={MainStyle.Flexbox}>
+            <div className={MainStyle.Margin}></div>
+            <Routes>
+              <Route path='/autorization/*' element={<Authorization />} />
+            <Route path='/menu-bar/*' element={<MenuBar makeArr={props.makeArr} massageData={props.massageData} />} />
+            {/*будь аккуратнее куда суешь пропсы */}
+              <Route path='/registrationForm/*' element={<RegistrationForm/>} />
+            </Routes>
+
+            <div className={MainStyle.Margin}></div>
+          </div>
+        </main>
 
 
-     
      <Footer/>
     </div>
   );

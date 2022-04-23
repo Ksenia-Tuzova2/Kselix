@@ -11,16 +11,16 @@ import {Routes, Route , Link} from 'react-router-dom'
 import {Massage} from '../content/massage/massage'
 import {Profile} from '../content/profile/profile'
 import {Friends} from '../content/friends/friends'
-import NewsFeed from '../content/news/newsfeed'
+import {NewsFeed} from '../content/news/newsfeed'
 
 // import News from '#'
 // import Music from '#'
 // import Settings from '#'
 
 
-const MenuBar=()=>{
+const MenuBar=(props)=>{
+
     return(
-     
 <>
 <nav className={style.menubar__wrapper}>
 <ul className={style.menuBar__list}>
@@ -32,11 +32,13 @@ const MenuBar=()=>{
     <li className={style.lastchild}><a href='#'><img src={SettingIcon}></img><p>Settings</p></a></li>
 </ul>
  </nav>
+ 
  <Routes>
-     <Route path='/massage/*' element={<Massage/>}/>
-     <Route path='/profile/*' element={<Profile/>}/>
+     <Route path='/massage/*' element={<Massage makeArr={props.makeArr}/>}/>
+                <Route path='/profile/*' element={<Profile massageData={props.massageData}/>}/>
      <Route path='/friends' element={<Friends/>}/>
-     <Route path='/news/*' element={<NewsFeed/>}/>
+                
+                <Route path='/news/*' element={<NewsFeed  massageData={props.massageData}/>}/>
  </Routes>
  </>
 

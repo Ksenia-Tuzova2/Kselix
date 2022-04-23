@@ -1,25 +1,11 @@
-import React from 'react'
-import { NewsPost } from './newsPost/newsPost'
-const MakeNewPost = [
-    {
-        text: ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed illo blanditiis accusamus eius, laborum aliquam deserunt atque fuga tempore ad nemo quibusdam perspiciatis recusandae quas illum maxime laudantium aspernatur. Deleniti?',
-    },
-    {
-        text: ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed illo blanditiis accusamus eius, laborum aliquam deserunt atque fuga tempore ad nemo quibusdam perspiciatis recusandae quas illum maxime laudantium aspernatur. Deleniti?',
-    },
-    {
-        text: ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed illo blanditiis accusamus eius, laborum aliquam deserunt atque fuga tempore ad nemo quibusdam perspiciatis recusandae quas illum maxime laudantium aspernatur. Deleniti?',
-    },
-]
+import NewPosts from '../profile/posts/newPosts/newPosts'
 
-let Post = MakeNewPost.map((t) => <NewsPost text={t.text} />)
+export const NewsFeed = (props) => {
 
-const NewsFeed = (props) => {
+    let MakeNewPost = props.massageData.map((m) => <NewPosts massage={m.massage} />)
     return (
         <div>
-            {Post}
+          {MakeNewPost}
         </div>
     )
 }
-
-export default NewsFeed
