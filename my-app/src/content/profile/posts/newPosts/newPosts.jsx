@@ -14,26 +14,9 @@ const NewPosts=(props)=>{
 
     let DisikeCounter=[
         {
-            counter:4,
+            counter:4
         },
     ];
- 
-  ;
-//     let LikeCounter=(function(){for(let l=0;l<=1;l++){return l}});
-
-//     console.log()
-
-//     LikeCounter();
-
-//   function countRabbits() {
-//     for(let i=1; i<=3; i++) {
-//       alert("Кролик номер " + i);
-//     }
-//   };
-
-
-<input type="button" onclick="countRabbits()" value="Считать кроликов!"></input>
-
 
     return(
         <div className={s.NewPost}>

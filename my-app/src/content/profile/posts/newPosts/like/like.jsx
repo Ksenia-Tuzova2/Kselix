@@ -2,14 +2,14 @@ import LikeStyle from './like.module.css'
 import LikeIcon from './like.svg'
 import React from 'react'
 
-const Like=(props)=>{
+const Like = (props) => {
 
-    return(
-       <div className={LikeStyle.Like__wrapper}>
-           <div>{props.counter}</div>
-           <a href='#' className={LikeStyle.like__btn}>
-           <img src={LikeIcon} alt="" />
-             </a> </div>
+    return (
+        <div className={LikeStyle.Like__wrapper}>
+            <div>{props.counter}</div>
+            <a href='#' className={LikeStyle.like__btn}>
+                <img src={LikeIcon} alt="" />
+            </a> </div>
     )
 }
 

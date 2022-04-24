@@ -7,40 +7,38 @@ import MusicIcon from './icons-menu-bar/icon_music.svg'
 import SettingIcon from './icons-menu-bar/cil_settings.svg'
 import React from 'react'
 
-import {Routes, Route , Link} from 'react-router-dom'
-import {Massage} from '../content/massage/massage'
-import {Profile} from '../content/profile/profile'
-import {Friends} from '../content/friends/friends'
-import {NewsFeed} from '../content/news/newsfeed'
+import { Routes, Route, Link } from 'react-router-dom'
+import { Massage } from '../content/massage/massage'
+import { Profile } from '../content/profile/profile'
+import { Friends } from '../content/friends/friends'
+import { NewsFeed } from '../content/news/newsfeed'
 
-// import News from '#'
 // import Music from '#'
 // import Settings from '#'
 
 
-const MenuBar=(props)=>{
+const MenuBar = (props) => {
 
-    return(
-<>
-<nav className={style.menubar__wrapper}>
-<ul className={style.menuBar__list}>
-    <li className={style.firstchild}><Link to='profile'><img src={ProfileIcon}></img><p>Profile</p></Link></li>
-    <li><Link to='massage'><img src={MassageIcon}></img><p>Massage</p></Link></li>
-    <li><Link to='friends'><img src={FriendsIcon}></img><p>Friends</p></Link></li>
-    <li><Link to='news'><img src={NewsIcon}></img><p>News</p></Link></li>
-    <li><Link to='music'><img src={MusicIcon}></img><p>Music</p></Link></li>
-    <li className={style.lastchild}><a href='#'><img src={SettingIcon}></img><p>Settings</p></a></li>
-</ul>
- </nav>
- 
- <Routes>
-     <Route path='/massage/*' element={<Massage makeArr={props.makeArr}/>}/>
-                <Route path='/profile/*' element={<Profile massageData={props.massageData}/>}/>
-     <Route path='/friends' element={<Friends/>}/>
-                
-                <Route path='/news/*' element={<NewsFeed  massageData={props.massageData}/>}/>
- </Routes>
- </>
+    return (
+        <>
+            <nav className={style.menubar__wrapper}>
+                <ul className={style.menuBar__list}>
+                    <li className={style.firstchild}><Link to='profile'><img src={ProfileIcon}></img><p>Profile</p></Link></li>
+                    <li><Link to='massage'><img src={MassageIcon}></img><p>Massage</p></Link></li>
+                    <li><Link to='friends'><img src={FriendsIcon}></img><p>Friends</p></Link></li>
+                    <li><Link to='news'><img src={NewsIcon}></img><p>News</p></Link></li>
+                    <li><Link to='music'><img src={MusicIcon}></img><p>Music</p></Link></li>
+                    <li className={style.lastchild}><a href='#'><img src={SettingIcon}></img><p>Settings</p></a></li>
+                </ul>
+            </nav>
+
+            <Routes>
+                <Route path='/massage/*' element={<Massage makeArr={props.state.Massage.makeArr} />} />
+                <Route path='/profile/*' element={<Profile massageData={props.state.Profile.massageData} />} />
+                <Route path='/friends' element={<Friends />} />
+                <Route path='/news/*' element={<NewsFeed massageData={props.state.Profile.massageData} />} />     
+            </Routes>
+        </>
 
     )
 }

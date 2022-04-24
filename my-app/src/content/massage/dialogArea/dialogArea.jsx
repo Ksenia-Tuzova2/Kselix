@@ -1,20 +1,21 @@
 import React from 'react'
 import DialogAreaStyle from './dialogArea.module.css'
+import Btn from '../../../btn/btn'
+import Box from '../../../box.module.css'
 
 
-
-export const DialogArea=(props)=>{
-    return(
-<div className={DialogAreaStyle.DialogArea}>
-   <div className={DialogAreaStyle.Massages}>
-       {/* <div className={DialogAreaStyle.MyMassage}>ssss</div> */}
-       </div> 
-    <form action="#">
-       <textarea placeholder='Type your massage...' value='MyMassage' myMassage='my text'></textarea>
-       <input type="file" multiple='form/data' />
-       <button>send</button>
-    </form>
-</div>
+export const DialogArea = (props) => {
+    return (
+        <div className={DialogAreaStyle.DialogArea}>
+            <div className={DialogAreaStyle.Massages}>
+                {/* <div className={DialogAreaStyle.MyMassage}>ssss</div> */}
+            </div>
+            <form action="#" className={DialogAreaStyle.Form}>
+                <input type='text' className={DialogAreaStyle.TextInput+" "+Box.Box} placeholder='Type your massage...'  myMassage='my text'></input>
+                <input type="file" className={DialogAreaStyle.FileInput} multiple='form/data' />
+             <Btn name='send' />
+            </form>
+        </div>
     )
 }
 
