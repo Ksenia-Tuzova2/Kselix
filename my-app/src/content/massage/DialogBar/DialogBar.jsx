@@ -21,7 +21,7 @@ import UserName from '../../profile/userInfo/userName/userName'
  export const DialogBar=(props)=>{
 
     let RenderDialogItem = props.makeArr.map((el) => <Link to='DialogArea'><DialogItem name={el.name} id={el.id} time={el.time} massage={el.massage} /></Link> )
-
+    
       return(
    <div className='dialogBar'>
    {RenderDialogItem}         

@@ -8,7 +8,7 @@ export const DialogArea = (props) => {
     return (
         <div className={DialogAreaStyle.DialogArea}>
             <div className={DialogAreaStyle.Massages}>
-                {/* <div className={DialogAreaStyle.MyMassage}>ssss</div> */}
+            massage
             </div>
             <form action="#" className={DialogAreaStyle.Form}>
                 <input type='text' className={DialogAreaStyle.TextInput+" "+Box.Box} placeholder='Type your massage...'  myMassage='my text'></input>
