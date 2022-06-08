@@ -5,14 +5,14 @@ import UserPhoto from "./userPhoto/userPhoto"
 import ProfileStyle from '../profile.module.css'
 import UserName from "./userName/userName"
 import UserStatus from "./userStatus/userStatus"
-
+import Box from '../../../box.module.css'
 
 
 export const UserInfo=(props)=>{
     return(
       
       <div>
-         <div className={ProfileStyle.Profile}>
+         <div className={ProfileStyle.Profile+' '+Box.Box}>
            <UserPhoto/>
               <div className={ProfileStyle.Profile__userInfo}>
               <UserName frstName='Ksenia' scndName='Tuzova'/>

@@ -12,7 +12,9 @@ export const Header = (props) => {
       <Logo />
       <div className={HeaderStyle.Flexgrow}></div>
       <Avatar />
-      <Link to='/autorization/*'><Btn name='exit' /></Link>
+      <Link to='/content'><Btn name='come in'></Btn></Link>
+
+    
     </header>
   );
 };

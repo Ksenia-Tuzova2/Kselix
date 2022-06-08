@@ -5,11 +5,12 @@ import { UserInfo } from './userInfo/userInfo-list'
 
 
 
-export const Profile = (props) => {
+export const Profile = ({massageData,addPost}) => {
+    // debugger
     return (
         <div >
             <UserInfo />
-            <Posts massageData={props.massageData} />
+            <Posts massageData={massageData} addPost={addPost}/>
         </div>
     )
 }

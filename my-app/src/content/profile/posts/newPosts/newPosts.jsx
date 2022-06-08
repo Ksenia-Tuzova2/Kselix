@@ -23,12 +23,12 @@ const NewPosts=(props)=>{
                 <Avatar/>
                 <div className="Name-time-text">
                     <div className="box">              
-                <UserName frstName='Ksenia' scndName='Tuzova'/>
+                <UserName frstName='Tanya' scndName='Tuzova'/>
                 <Time/>
                 </div> 
                 <div className="Massage">{props.massage}</div>
                 <div className={s.NewPost__likeDislikeWrapper}>
-                <Like ></Like>
+                <Like counter='1'></Like>
                 <div className={s.FlexGrow}></div>
                 <Dislike counter={DisikeCounter[0].counter}/>
                 </div>

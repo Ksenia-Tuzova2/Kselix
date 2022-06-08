@@ -1,6 +1,7 @@
 import FriendStyle from './friend.module.css'
 import React from 'react'
 
+
 const Friend=(props)=>{
     return(
     <div className={FriendStyle.Friend}>
@@ -8,11 +9,9 @@ const Friend=(props)=>{
         <div className={FriendStyle.Friend__InfoWrapper}>
             <div className={FriendStyle.Friend__Name}>{props.friendName}</div>
             <div className={FriendStyle.Friend__Status}>{props.friendStatus}</div>
-            <button className={FriendStyle.Friend__Massage_Btn}>Massage</button>
+                <button className={FriendStyle.Friend__Massage_Btn}>Massage</button>
         </div>
    </div>
-
-       
     
     )
 }

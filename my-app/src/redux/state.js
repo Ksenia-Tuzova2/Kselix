@@ -1,4 +1,8 @@
- let State={
+// import { renderEntireTree } from "../render";
+
+//  renderEntireTree(State)
+
+  export let State={
 	 Massage:{
 	makeArr: [
 		{
@@ -37,4 +41,17 @@ Profile:{
 	],
 }
 }
-export default State
+// debugger
+ export let AddMassage=(newMassage)=>{
+	let newMas={massage:newMassage};
+
+State.Massage.makeArr.push(newMas)
+}
+
+// debugger
+export let AddPost=(newPost)=>{
+	let newP={massage:newPost,}
+
+	State.Profile.massageData.push(newP)
+}
+AddPost('ggggg')

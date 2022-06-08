@@ -13,7 +13,7 @@ export const Authorization=(props)=>{
 <form action="get">
 <input type='text' placeholder='login'/>
 <input type='password' placeholder='password'/>
-<Link to='/menu-bar'><Btn name='come in'></Btn></Link>
+<Link to='/exit'><Btn name='come in'></Btn></Link>
 
 </form>
 <div>or</div>
