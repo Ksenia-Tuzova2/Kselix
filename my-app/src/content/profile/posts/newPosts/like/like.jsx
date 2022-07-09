@@ -2,13 +2,12 @@ import LikeStyle from './like.module.css'
 import LikeIcon from './like.svg'
 import React from 'react'
 
-const Like = ({counter}) => {
-
+const Like = ({counter,pos}) => {
     return (
-        <div className={LikeStyle.Like__wrapper}> <a href='#' className={LikeStyle.like__btn} onClick={()=>alert('work')}>
+        <button className={LikeStyle.Like__btn} onClick={() => alert(pos)}>
             <div>{counter}</div>
                 <img src={LikeIcon} alt="" />
-            </a> </div>
+            </button>
     )
 }
 

@@ -1,3 +1,5 @@
+import {Store} from "./redux/store";
+
 
 import React from "react";
 import ReactDOM from "react-dom/client";
@@ -5,22 +7,25 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
-import {State} from './redux/state'
-import { AddMassage } from "./redux/state";
-import { AddPost } from "./redux/state";
 
-AddPost('hahhahha')
+
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-let renderEntireTree=()=>
-root.render(
-  <React.StrictMode>
-    <BrowserRouter>
+ let renderEntireTree = (Store) => {
+	// debugger
+	root.render(
+		<React.StrictMode>
+			<BrowserRouter>
 
-      <App appState={State} addMassage={AddMassage} addPost={AddPost} />
-    
-    </BrowserRouter>
-  </React.StrictMode>
-);
-renderEntireTree()
-reportWebVitals();
+				<App appState={Store._State} addMassage={Store.AddMassage} addPost={Store.AddPost} updateNewPostText={Store.updateNewPostText} updateMesText={Store.updateMesText} />
+
+			</BrowserRouter>
+		</React.StrictMode>
+	);
+	reportWebVitals();
+ }
+renderEntireTree(Store) 
+//это колбек, когда одна функция вызывает другую
+Store.subscribe(renderEntireTree)
+

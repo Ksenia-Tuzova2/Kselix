@@ -1,5 +1,5 @@
 import FriendStyle from './friend.module.css'
-import React from 'react'
+import BtnStyle from '../../../btn.module.css'
 
 
 const Friend=(props)=>{
@@ -9,7 +9,7 @@ const Friend=(props)=>{
         <div className={FriendStyle.Friend__InfoWrapper}>
             <div className={FriendStyle.Friend__Name}>{props.friendName}</div>
             <div className={FriendStyle.Friend__Status}>{props.friendStatus}</div>
-                <button className={FriendStyle.Friend__Massage_Btn}>Massage</button>
+                <button className={BtnStyle.Btn}>Massage</button>
         </div>
    </div>
     

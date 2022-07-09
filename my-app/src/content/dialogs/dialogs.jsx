@@ -6,15 +6,16 @@ import './dialogs.css'
 
 
 
-export const Dialogs = ({ MakeArr }) => {
+export const Dialogs = ({ Massage, addMassage, updateMesText }) => {
     // debugger
     return (
         <div className="Massage" >
-            <DialogBar MakeArr={MakeArr} />
+            <DialogBar MakeArr={Massage.makeArr} />
 
             <Routes>
                 <Route path='*' element={<Choose />} />
-                <Route path='/dialogArea/*' element={<DialogArea />} />
+                <Route path='/dialogArea/*'
+                    element={<DialogArea addMassage={addMassage} MyMessage={Massage.MyMassage} updateMesText={updateMesText} />}/>
             </Routes>
         </div>
     )

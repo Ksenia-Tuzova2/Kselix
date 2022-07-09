@@ -9,14 +9,8 @@ import UserName from '../../userInfo/userName/userName'
     
 
 
-const NewPosts=(props)=>{
+const NewPosts=({massage,pos})=>{
 
-
-    let DisikeCounter=[
-        {
-            counter:4
-        },
-    ];
 
     return(
         <div className={s.NewPost}>
@@ -26,11 +20,11 @@ const NewPosts=(props)=>{
                 <UserName frstName='Tanya' scndName='Tuzova'/>
                 <Time/>
                 </div> 
-                <div className="Massage">{props.massage}</div>
+                <div className="Massage">{massage}</div>
                 <div className={s.NewPost__likeDislikeWrapper}>
-                <Like counter='1'></Like>
+                    <Like counter='1' pos={pos} ></Like>
                 <div className={s.FlexGrow}></div>
-                <Dislike counter={DisikeCounter[0].counter}/>
+                <Dislike counter=''/>
                 </div>
                 </div>
         </div>

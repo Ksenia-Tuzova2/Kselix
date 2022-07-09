@@ -1,4 +1,4 @@
-.Form{
+.FormWrapper{
 	display: flex;
 margin: 0 0 5px 0;
 }
@@ -6,8 +6,4 @@ margin: 0 0 5px 0;
 	border: 0;
 	flex-grow: 1;
 	margin: 0 5px 0 0;
-}
-.Btn{
-		border: 0;
-			margin: 0;
 }

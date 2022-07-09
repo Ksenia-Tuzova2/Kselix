@@ -1,17 +1,17 @@
 import NewPosts from './newPosts/newPosts'
-import PostArea from './postArea/postArea'
+import {PostArea} from './postArea/postArea'
 import React from 'react'
 
 
-export const Posts = ({ massageData, addPost})=>{
+export const Posts = ({ massageData, addPost, newPostText, updateNewPostText}) => {
 // debugger
-    let MakeNewPost = massageData.map((m) => <NewPosts massage={m.massage} />)
 
-    return(
-    <div className="content__post">
-            <PostArea addPost={addPost}/>
-    {MakeNewPost}
-    </div>
+
+    return (
+        <div className="content__post">
+            <PostArea addPost={addPost} massageData={massageData} newPostText={newPostText} updateNewPostText={updateNewPostText}/>
+          
+        </div>
 
     )
 }

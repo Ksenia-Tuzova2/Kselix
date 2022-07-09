@@ -2,7 +2,7 @@ import HeaderStyle from './header.module.css'
 import React from 'react'
 import Logo from './logo/logo'
 import Avatar from './avatar/avatar'
-import Btn from '../btn/btn'
+import BtnStyle from '../btn.module.css'
 import { Link, Routes, Route } from 'react-router-dom'
 import '../App.css';
 
@@ -12,7 +12,7 @@ export const Header = (props) => {
       <Logo />
       <div className={HeaderStyle.Flexgrow}></div>
       <Avatar />
-      <Link to='/content'><Btn name='come in'></Btn></Link>
+      <Link className={BtnStyle.Btn} to='/content' >come in</Link>
 
     
     </header>
