@@ -24,6 +24,7 @@ let mapMyMes=MyMessage.map((el)=><MyMasItem MyMessage={el.massage}/>)
         <div className={DialogAreaStyle.DialogArea}>
             <div className={DialogAreaStyle.Massages}>
                 <YourMasItem />
+ 
                 {mapMyMes}
                 
             </div>
