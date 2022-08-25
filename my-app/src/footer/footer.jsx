@@ -1,6 +1,6 @@
 
 import React from 'react'
-import FooterStyle from './footer.module.css'
+import FooterStyle from './footer.module.scss'
 import Footer__menu from './footerMenu/footerMenu'
 
 

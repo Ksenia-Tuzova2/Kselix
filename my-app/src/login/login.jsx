@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
-import LoginStyle from './login.module.css'
+import LoginStyle from './login.module.scss'
 import { RegistrationForm } from '../content/autorization/registration/registrationForm'
 import { Authorization } from '../content/autorization/autorization';
 import { Main } from '../main/main';
